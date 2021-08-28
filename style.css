@@ -5,7 +5,7 @@
 body {
     margin: 0px 60px;
     font-family: monospace;
-    
+    background-image: linear-gradient(white 60%, black);
 }
 
 
@@ -14,13 +14,20 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    
 
 
 }
 
 header {
-    
-    text-align: center;    
+    border: 2px solid black;
+    text-align: center;
+    width: 600px;
+    margin: auto;    
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 8px 0px black;
 }
 
 nav {
@@ -30,13 +37,13 @@ nav {
 
 h1 {
     margin-bottom: 20px;
-    font-size: 60px;
+    font-size: 60px; 
 }
 
 .box {
     flex: 1 0 auto;
     max-width: 500px;
-    text-align: center;
+    text-align: left;
     margin: 20px 20px;
     background-color: white;
     box-shadow: 5px 8px 0px black;
@@ -47,33 +54,43 @@ h1 {
     width: 400px;    
 }
 
+footer {
+    background-color: transparent;
+    height: 50px;
+    text-align: center;
+}
+
+footer h2 {
+    color: white;
+}
+
 .box:hover {
     background-color: black;
     height: 410px;
     width: 410px;
     color: white;
     transition-duration: 500ms;
+    box-shadow: 0px 0px 0px white;
 }
 
 .box h2 {
     border: 2px solid black;
     font-size: 1.75rem;
     padding: 3%;
-    width: 200px;
+    width: 250px;
     border-radius: 10px;
     margin: -40px;
     background-color: white;
 }
 
-.box p {
+.box pre {
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: 1.2em;
     margin: 50px 20px;
-    user-select: all;
-    
+    user-select: all;    
 }
 
-.box:hover > p {
+.box:hover > pre {
     margin: 10px 20px;
     border: 2px solid white;
     border-radius: 10px;
